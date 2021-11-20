@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./images/img.jpg);
+    background-color: #555395;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.main-text{
+    text-align: center;
+    color: #f6f6f6;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+#survey-form{
+    background-color: #141525;
+    height: 80%;
+    padding: 1rem;
+    margin: 3% 10%;
+    opacity: 0.9;   
+}
+
+.form-grp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 5px;
+
+}
+
+.form-info {
+    font-size: 15px;
+    color: #d6d7e5;
+    margin-bottom: 5px;
+}
+
+label{
+    color:#d6d7e5;
+    /* font-size: 15px; */
+}
+
+input,
+select {
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+}
+
+.radio-btn, .checkbox-btn{
+    display: inline-block;
+    margin-right: 0.65rem;
+    min-width: 0.8rem;
+    min-height: 0.8rem;
+}
+
+#comment {
+    font-size: 15px;
+    color: #0c0d12;
+    padding: 8px;
+}
+
+.btn {
+    display: inline-block;
+    width: 98%;
+    background-color: #38ad65;
+    border: none;
+    padding: 8px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #38ad65;
+
+}
+
+@media (max-width: 1076px) {
+    #survey-form {
+        padding: 2.5rem 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-text {
+        font-size: 0.6rem;
+    }
+}
