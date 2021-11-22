@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="main-text">
+        <h1>freeCodeCamp Survey Form</h1>
+        <i>Thank you for taking the time to help us improve the platform</i>
+    </header>
     <main id="main-bg">
-        <header class="main-text">
-            <h1>freeCodeCamp Survey Form</h1>
-            <i>Thank you for taking the time to help us improve the platform</i>
-        </header>
 
         <section id="bg-con" class="container">
             <form action="" id="survey-form">
@@ -33,8 +33,12 @@
 
                 <div class="form-grp">
                     <label for="description" class="form-info">Which option best describes your current role</label>
-                    <select name="role" id="current-role">
-                        <option value="current role" class="option">Select current role</option>
+                    <select name="role" id="current-role" required>
+                        <option value="current role" class="option" disabled>Select current role</option>
+                        <option value="student" class="option">Student</option>
+                        <option value="unemployed" class="option">Unemployed</option>
+                        <option value="employed" class="option">Employed</option>
+                        <option value="other" class="option">Other</option>
                     </select>
                 </div>
 
@@ -57,7 +61,12 @@
                 <div class="form-grp">
                     <label for="features" class="form-info">What is your favourite feature of freeCodeCamp?</label>
                     <select name="feature" id="fav-feature">
-                        <option value="favourite feature" class="option">Select an option</option>
+                        <option value="favourite feature" class="option" disabled>Select an option</option>
+                        <option value="projects" class="option">Projects</option>
+                        <option value="forum" class="option">Forum</option>
+                        <option value="challenges" class="option">Challenges</option>
+                        <option value="community" class="option">Community</option>
+
                     </select>
                 </div>
 
@@ -117,10 +126,13 @@
 
                     <div class="form-grp">
                         <label for="" class="form-info">Any comments or suggestion</label>
-                        <textarea name="comment" id="comment" cols="10" rows="5" placeholder="place your comment here"></textarea>
+                        <textarea name="comment" id="comment" cols="10" rows="5" placeholder="Place your comment here"></textarea>
                     </div>
 
-                    <button type="submit" class="btn">Submit</button>
+                    <div id="button">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+
             </form>  
         </section>
     </main>
